@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo</title>
+	<script type="text/javascript" src="riny.sort.js"></script>
+</head>
+<body>
+	
+</body>
+	<script>
+	var data=[
+		{
+			'weight':1,
+			'content':'hello1'
+		},
+		{
+			'weight':2,
+			'content':'hello2'
+		},
+		{
+			'weight':1,
+			'content':'hello1'
+		},
+		{
+			'weight':4,
+			'content':'hello4'
+		},
+		{
+			'weight':2,
+			'content':'hello2'
+		},
+		{
+			'weight':3,
+			'content':'hello3'
+		}
+	];
+
+	var data2=[
+		{
+			'weight':1,
+			'content':'hello1'
+		},
+		{
+			'weight':3,
+			'content':'hello2'
+		},
+		{
+			'weight':2,
+			'content':'hello1'
+		},
+		{
+			'weight':4,
+			'content':'hello4'
+		},
+		{
+			'weight':2,
+			'content':'hello2'
+		},
+		{
+			'weight':3,
+			'content':'hello3'
+		}
+	];
+
+	var newArr=rinySort(data,'asc','weight');
+	var newArr2=rinySort(data2,'desc','weight');
+	console.log(newArr,newArr2);
+	</script>
+</html>
